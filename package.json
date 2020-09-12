@@ -1,0 +1,26 @@
+{
+  "name": "io.codeblaze.templates",
+  "version": "1.0.0",
+  "displayName": "CodeBlaze Templates",
+  "description": "Monobehaviours starting points for common types of games",
+  "unity": "2020.1",
+  "unityRelease": "2f1",
+  "dependencies": {  },
+  "keywords": [
+    "Utility"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BLaZeKiLL/CodeBlazeLib.git"
+  },
+  "bugs": {
+    "url": "https://github.com/BLaZeKiLL/CodeBlazeLib/issues"
+  },
+  "homepage": "https://github.com/BLaZeKiLL/CodeBlazeLib#readme",
+  "author": {
+    "name": "CodeBlaze",
+    "email": "blazeingamer10@gmail.com",
+    "url": "https://www.youtube.com/channel/UC_qfPIYfXOvg0SDAc8Z68WA"
+  }
+}
