@@ -1,7 +1,7 @@
 # CodeBlaze Packages
 CodeBlaze's Packages for Unity
 
-## IMPORTANT
+## Installation
 These packages are published to open upm and can be installed using there cli
 - [Library](https://openupm.com/packages/io.codeblaze.library/)
 - [Game Framework](https://openupm.com/packages/io.codeblaze.gameframework/)
