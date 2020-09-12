@@ -1,0 +1,26 @@
+{
+  "name": "io.codeblaze.library",
+  "version": "1.0.0",
+  "displayName": "CodeBlaze Library",
+  "description": "Extensions for unity API",
+  "unity": "2020.1",
+  "unityRelease": "2f1",
+  "dependencies": {  },
+  "license": "MIT",
+  "keywords": [
+    "Utility"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BLaZeKiLL/CodeBlazeLib.git"
+  },
+  "bugs": {
+    "url": "https://github.com/BLaZeKiLL/CodeBlazeLib/issues"
+  },
+  "homepage": "https://github.com/BLaZeKiLL/CodeBlazeLib#readme",
+  "author": {
+    "name": "CodeBlaze",
+    "email": "blazeingamer10@gmail.com",
+    "url": "https://www.youtube.com/channel/UC_qfPIYfXOvg0SDAc8Z68WA"
+  }
+}
