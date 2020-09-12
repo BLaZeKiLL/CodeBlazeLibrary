@@ -1,0 +1,43 @@
+name: UPM Release
+on:
+  push:
+    branches:
+      - master
+jobs:
+  create-upm-branches:
+    name: Release
+    runs-on: ubuntu-latest
+    steps:
+      - name: Git Checkout
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: Semantic Versioning
+        id: semantic
+        uses: cycjimmy/semantic-release-action@v2
+        with:
+          extra_plugins: |
+            @semantic-release/changelog
+            @semantic-release/git
+          branch: master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Create Upm Branches
+        run: |
+          git branch -d upm/game-framework upm/library upm/templates upm/extensions/cinemachine upm/extensions/Monetization &> /dev/null || echo upm branches not found
+          git subtree split -P Assets/Src/Library -b upm/library
+          git subtree split -P Assets/Src/Templates -b upm/templates
+          git subtree split -P Assets/Src/GameFramework -b upm/game-framework
+          git subtree split -P Assets/Src/Extensions/Cinemachine -b upm/extensions/cinemachine
+          git subtree split -P Assets/Src/Extensions/Monetization -b upm/extensions/monetization
+          git push origin --all
+      - name: Release Tagging
+        if: steps.semantic.outputs.new_release_published == 'true'
+        run: |
+          echo ${{ steps.semantic.outputs.new_release_version }}
+          git tag library/v${{ steps.semantic.outputs.new_release_version }} upm/library
+          git tag templates/v${{ steps.semantic.outputs.new_release_version }} upm/templates
+          git tag game-framework/v${{ steps.semantic.outputs.new_release_version }} upm/game-framework
+          git tag extensions/cinemachine/v${{ steps.semantic.outputs.new_release_version }} upm/extensions/cinemachine
+          git tag extensions/monetization/v${{ steps.semantic.outputs.new_release_version }} upm/extensions/monetization
+          git push origin --tags

@@ -1,0 +1,28 @@
+{
+  "name": "io.codeblaze.extensions.cinemachine",
+  "version": "1.0.0",
+  "displayName": "CodeBlaze Extensions Cinemachine",
+  "description": "Extensions for cinemachine",
+  "unity": "2020.1",
+  "unityRelease": "2f1",
+  "dependencies": {
+    "com.unity.cinemachine": "2.6.2"
+  },
+  "keywords": [
+    "Utility"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BLaZeKiLL/CodeBlazeLib.git"
+  },
+  "bugs": {
+    "url": "https://github.com/BLaZeKiLL/CodeBlazeLib/issues"
+  },
+  "homepage": "https://github.com/BLaZeKiLL/CodeBlazeLib#readme",
+  "author": {
+    "name": "CodeBlaze",
+    "email": "blazeingamer10@gmail.com",
+    "url": "https://www.youtube.com/channel/UC_qfPIYfXOvg0SDAc8Z68WA"
+  }
+}
