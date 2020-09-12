@@ -5,7 +5,7 @@
   "description": "Monobehaviours starting points for common types of games",
   "unity": "2020.1",
   "unityRelease": "2f1",
-  "dependencies": {  },
+  "dependencies": {},
   "keywords": [
     "Utility"
   ],
