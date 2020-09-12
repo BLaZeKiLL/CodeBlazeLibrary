@@ -1,0 +1,27 @@
+# package name
+name: io.codeblaze.extensions.cinemachine
+# package display name
+displayName: CodeBlaze Extensions Cinemachine
+# package description
+description: Extensions for unity API
+# repository url
+repoUrl: 'https://github.com/BLaZeKiLL/CodeBlazeLibrary'
+# forked repository url
+parentRepoUrl: null
+# spdx license id
+licenseSpdxId: MIT
+# license name
+licenseName: MIT License
+# list of topic slugs
+topics:
+  - utilities
+# Filter Git tags based on prefix. Used by monorepos to separate pacakges
+gitTagPrefix: 'extensions/cinemachine'
+# A regular expression to ignore Git tags
+gitTagIgnore: '-master$'
+# Minimal version to build
+minVersion: '1.0.0'
+# readme path
+readme: 'upm/extensions/cinemachine:README.md'
+# package hunter name (github username)
+hunter: BLaZeKiLL
