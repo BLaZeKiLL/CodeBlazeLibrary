@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 
 using CodeBlaze.GameFramework.Behaviour;
 
@@ -8,11 +9,10 @@ namespace CodeBlaze.GameFramework.Manager {
 
     public class LazyManager<T> where T : LazyManager<T>, new() {
 
-        private static T _current;
+        private static Lazy<T> _current = new Lazy<T>(() => new T());
 
         public static T Current {
-            get => _current ?? (_current = new T());
-            set => _current = value;
+            get => _current.Value;
         }
 
         private InternalBehaviour Behaviour { get; }
@@ -24,7 +24,7 @@ namespace CodeBlaze.GameFramework.Manager {
             Behaviour.OnDrawGizmosAction = OnDrawGizmos;
             Behaviour.OnDestroyAction = () => {
                 OnDestroy();
-                Current = default;
+                _current = default;
             };
             OnInitialize(); // Could lead to problems
         }
