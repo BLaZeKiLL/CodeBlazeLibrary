@@ -1,14 +1,15 @@
 ﻿using System.Collections;
 
+using CodeBlaze.Examples.Manager;
 using CodeBlaze.GameFramework.Manager;
 using CodeBlaze.GameFramework.Manager.TickManager;
 using CodeBlaze.GameFramework.Scene;
 
 using UnityEngine;
 
-namespace SceneControllerTest {
+namespace CodeBlaze.Examples.SceneController {
 
-    public class GameController : SceneController {
+    public class GameController : GameFramework.Scene.SceneController {
         
         protected override IEnumerator Bootstrap() {
             Debug.Log("Init Phase");
@@ -16,6 +17,7 @@ namespace SceneControllerTest {
             yield return null;
             
             Manager<TickManager>.Initialize();
+            WrappingManager<WrappingManagerExample, NameProvider>.Initialize();
 
             yield return null;
             
