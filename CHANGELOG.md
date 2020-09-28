@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/BLaZeKiLL/CodeBlazeLibrary/compare/v1.1.0...v1.1.1) (2020-09-28)
+
+
+### Bug Fixes
+
+* toast manager renamed ([#9](https://github.com/BLaZeKiLL/CodeBlazeLibrary/issues/9)) ([96f93f6](https://github.com/BLaZeKiLL/CodeBlazeLibrary/commit/96f93f680a6df53763c35563236aa867adeff3be))
+
 # [1.1.0](https://github.com/BLaZeKiLL/CodeBlazeLibrary/compare/v1.0.2...v1.1.0) (2020-09-28)
 
 
