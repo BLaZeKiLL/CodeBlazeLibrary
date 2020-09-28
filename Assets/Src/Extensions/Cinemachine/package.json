@@ -1,6 +1,6 @@
 {
   "name": "io.codeblaze.extensions.cinemachine",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "displayName": "CodeBlaze Extensions Cinemachine",
   "description": "Extensions for cinemachine",
   "unity": "2020.1",
