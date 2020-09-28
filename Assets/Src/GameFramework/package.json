@@ -1,6 +1,6 @@
 {
   "name": "io.codeblaze.gameframework",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "displayName": "CodeBlaze Game Framework",
   "description": "Foundational API's to create systems and managers for games",
   "unity": "2020.1",
