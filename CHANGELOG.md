@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/BLaZeKiLL/CodeBlazeLibrary/compare/v1.0.2...v1.1.0) (2020-09-28)
+
+
+### Features
+
+* added lazy object pools and improved current object pool ([ddb61fd](https://github.com/BLaZeKiLL/CodeBlazeLibrary/commit/ddb61fdbff2bb038b70d106ea322224b2af7163f))
+
 ## [1.0.2](https://github.com/BLaZeKiLL/CodeBlazeLibrary/compare/v1.0.1...v1.0.2) (2020-09-13)
 
 
