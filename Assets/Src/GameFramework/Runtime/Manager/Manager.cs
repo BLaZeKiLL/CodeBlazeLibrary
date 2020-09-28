@@ -9,16 +9,16 @@ namespace CodeBlaze.GameFramework.Manager {
 
     public class Manager<T> where T : Manager<T>, new() {
 
-        private InternalBehaviour Behaviour { get; }
+        private InternalBehaviour _Behaviour { get; }
         
         public static T Current { get; private set; }
 
         protected Manager() {
-            Behaviour = InternalBehaviour.Create(typeof(T).Name);
-            Behaviour.OnUpdateAction = OnUpdate;
-            Behaviour.OnLateUpdateAction = OnLateUpdate;
-            Behaviour.OnDrawGizmosAction = OnDrawGizmos;
-            Behaviour.OnDestroyAction = () => {
+            _Behaviour = InternalBehaviour.Create(typeof(T).Name);
+            _Behaviour.OnUpdateAction = OnUpdate;
+            _Behaviour.OnLateUpdateAction = OnLateUpdate;
+            _Behaviour.OnDrawGizmosAction = OnDrawGizmos;
+            _Behaviour.OnDestroyAction = () => {
                 OnDestroy();
                 Current = default;
             };
@@ -42,13 +42,13 @@ namespace CodeBlaze.GameFramework.Manager {
         protected virtual void OnDrawGizmos() {}
 
         protected TChild InstantiateChild<TChild>(TChild original) where TChild : UnityEngine.Object =>
-            UnityEngine.Object.Instantiate<TChild>(original, Behaviour.transform);
+            UnityEngine.Object.Instantiate<TChild>(original, _Behaviour.transform);
 
-        protected Coroutine StartCoroutine(IEnumerator routine) => Behaviour.StartCoroutine(routine);
+        protected Coroutine StartCoroutine(IEnumerator routine) => _Behaviour.StartCoroutine(routine);
 
-        protected void StopCoroutine(IEnumerator routine) => Behaviour.StopCoroutine(routine);
+        protected void StopCoroutine(IEnumerator routine) => _Behaviour.StopCoroutine(routine);
 
-        protected void StopCoroutine(Coroutine routine) => Behaviour.StopCoroutine(routine);
+        protected void StopCoroutine(Coroutine routine) => _Behaviour.StopCoroutine(routine);
 
     }
 
