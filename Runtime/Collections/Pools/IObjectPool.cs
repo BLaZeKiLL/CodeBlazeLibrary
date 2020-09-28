@@ -6,8 +6,10 @@
         
         T Claim();
 
-        void Reclaim(T poolObject);
+        void Reclaim(T instance);
 
     }
+    
+    public delegate T builder<T>(int index);
 
 }
