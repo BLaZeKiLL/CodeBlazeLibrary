@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace CodeBlaze.Library.Android {
 
-    public class ToastManager {
+    public class NativeToastManager {
         
         public enum Length {
 
@@ -13,12 +13,12 @@ namespace CodeBlaze.Library.Android {
             
         }
 
-        private static ToastManager instance;
+        private static NativeToastManager instance;
 
         private AndroidJavaObject activity;
         private AndroidJavaObject context;
 
-        private ToastManager() {
+        private NativeToastManager() {
             var player = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
             activity = player.GetStatic<AndroidJavaObject>("currentActivity");
             context = activity.Call<AndroidJavaObject>("getApplicationContext");
@@ -27,7 +27,7 @@ namespace CodeBlaze.Library.Android {
         public static void Show(string message, Length length) {
             if (Application.platform != RuntimePlatform.Android) return;
             
-            if (instance == null) instance = new ToastManager();
+            if (instance == null) instance = new NativeToastManager();
             
             string jlength;
             switch (length) {
