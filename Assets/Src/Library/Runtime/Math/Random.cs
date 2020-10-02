@@ -25,8 +25,8 @@ namespace CodeBlaze.Library.Math {
                 validRanges.Add(r);
 
                 return r.range;
-
             });
+            
             float x = UnityEngine.Random.Range(0f, count);
             float sum = 0;
             

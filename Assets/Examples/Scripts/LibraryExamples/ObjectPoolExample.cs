@@ -1,6 +1,4 @@
-﻿using System;
-
-using CodeBlaze.Library.Collections.Pools;
+﻿using CodeBlaze.Library.Collections.Pools;
 
 using UnityEngine;
 

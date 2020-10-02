@@ -3,7 +3,6 @@
 using CodeBlaze.Examples.Manager;
 using CodeBlaze.GameFramework.Manager;
 using CodeBlaze.GameFramework.Manager.TickManager;
-using CodeBlaze.GameFramework.Scene;
 
 using UnityEngine;
 

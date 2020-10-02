@@ -1,9 +1,6 @@
-﻿using System;
-
-using CodeBlaze.Examples.Manager;
+﻿using CodeBlaze.Examples.Manager;
 using CodeBlaze.GameFramework.Behaviour;
 using CodeBlaze.GameFramework.Manager.TickManager;
-using CodeBlaze.GameFramework.Scene;
 
 using UnityEngine;
 
