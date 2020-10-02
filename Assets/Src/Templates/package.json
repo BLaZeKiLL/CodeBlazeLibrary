@@ -1,6 +1,6 @@
 {
   "name": "io.codeblaze.templates",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "displayName": "CodeBlaze Templates",
   "description": "Monobehaviours starting points for common types of games",
   "unity": "2020.1",
