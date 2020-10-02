@@ -4,7 +4,7 @@
     ["@semantic-release/commit-analyzer", { 
       "preset": "angular",
       "releaseRules": [
-        {"type": "wip", "release": "minor"},
+        {"type": "refactor", "release": "patch"},
         {"type": "release", "release": "major"}
       ]
     }],

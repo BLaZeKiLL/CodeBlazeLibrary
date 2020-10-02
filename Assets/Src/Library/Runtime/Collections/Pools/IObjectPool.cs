@@ -6,10 +6,8 @@
         
         T Claim();
 
-        void Reclaim(T instance);
+        void Reclaim(T item);
 
     }
     
-    public delegate T builder<T>(int index);
-
 }

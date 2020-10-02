@@ -1,32 +1,49 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace CodeBlaze.Library.Collections.Pools {
 
     public class LazyObjectPool<T> : IObjectPool<T> {
 
-        private builder<T> _builder;
         private readonly Queue<T> _pool;
+        
+        private readonly Func<int, T> _builder;
+        private readonly Action<T> _onClaim;
+        private readonly Action<T> _onReclaim;
 
         private int _instanceCount;
+        private int _size;
         
-        public LazyObjectPool(int size, builder<T> builder) {
-            _builder = builder;
+        public LazyObjectPool(int size, Func<int, T> builder, Action<T> onClaim = null, Action<T> onReclaim = null) {
+            _size = size;
             _pool = new Queue<T>(size);
+            _builder = builder;
+            _onClaim = onClaim;
+            _onReclaim = onReclaim;
         }
         
         public int Size => _pool.Count;
-        public int Length => _instanceCount;
 
         public T Claim() {
-            if (_pool.Count != 0) return _pool.Dequeue();
+            T item;
 
-            _instanceCount++;
+            if (_pool.Count != 0) item = _pool.Dequeue();
+            else if (_instanceCount < _size) {
+                _instanceCount++;
+                item = _builder(_instanceCount);
+            } else {
+                throw new IndexOutOfRangeException("Pool Size exceeded");
+            }
+            
+            _onClaim?.Invoke(item);
 
-            return _builder(_instanceCount);
-
+            return item;
         }
 
-        public void Reclaim(T instance) => _pool.Enqueue(instance);
+        public void Reclaim(T item) {
+            _onReclaim?.Invoke(item);
+            _pool.Enqueue(item);
+        }
 
     }
 
