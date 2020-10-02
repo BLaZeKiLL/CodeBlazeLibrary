@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/BLaZeKiLL/CodeBlazeLibrary/compare/v1.1.1...v1.2.0) (2020-10-02)
+
+
+### Features
+
+* Random Bag collection & tests added ([#14](https://github.com/BLaZeKiLL/CodeBlazeLibrary/issues/14)) ([c2f18ff](https://github.com/BLaZeKiLL/CodeBlazeLibrary/commit/c2f18ffab07b33382f6637ed9167f2415695e06e))
+
 ## [1.1.1](https://github.com/BLaZeKiLL/CodeBlazeLibrary/compare/v1.1.0...v1.1.1) (2020-09-28)
 
 
