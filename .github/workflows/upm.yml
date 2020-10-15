@@ -2,7 +2,7 @@ name: UPM Release
 on:
   push:
     branches:
-      - master
+      - main
 jobs:
   create-upm-branches:
     name: Release
@@ -19,7 +19,7 @@ jobs:
           extra_plugins: |
             @semantic-release/changelog
             @semantic-release/git
-          branch: master
+          branch: main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Create Upm Branches
