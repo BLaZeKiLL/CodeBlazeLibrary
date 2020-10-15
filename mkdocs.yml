@@ -1,0 +1,6 @@
+site_name: CodeBlaze Docs
+theme:
+  name: material
+  palette:
+    scheme: slate
+    primary: green
