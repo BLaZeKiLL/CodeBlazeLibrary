@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/BLaZeKiLL/CodeBlazeLibrary/compare/v1.2.1...v1.3.0) (2020-10-20)
+
+
+### Features
+
+* Merge pull request [#20](https://github.com/BLaZeKiLL/CodeBlazeLibrary/issues/20) from BLaZeKiLL/feat/singleton-behaviour ([94d652c](https://github.com/BLaZeKiLL/CodeBlazeLibrary/commit/94d652c3c071edd5052bb0cde60ceadf13cb6196))
+
 ## [1.2.1](https://github.com/BLaZeKiLL/CodeBlazeLibrary/compare/v1.2.0...v1.2.1) (2020-10-02)
 
 # [1.2.0](https://github.com/BLaZeKiLL/CodeBlazeLibrary/compare/v1.1.1...v1.2.0) (2020-10-02)
