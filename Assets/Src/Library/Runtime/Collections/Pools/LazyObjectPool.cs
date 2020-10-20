@@ -27,8 +27,9 @@ namespace CodeBlaze.Library.Collections.Pools {
         public T Claim() {
             T item;
 
-            if (_pool.Count != 0) item = _pool.Dequeue();
-            else if (_instanceCount < _size) {
+            if (_pool.Count != 0) // if pool has objects
+                item = _pool.Dequeue();
+            else if (_instanceCount < _size) { // if new objects can be created
                 _instanceCount++;
                 item = _builder(_instanceCount);
             } else {
