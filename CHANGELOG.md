@@ -1,3 +1,10 @@
+## [1.3.1](https://github.com/BLaZeKiLL/CodeBlazeLibrary/compare/v1.3.0...v1.3.1) (2020-10-20)
+
+
+### Bug Fixes
+
+* Merge pull request [#22](https://github.com/BLaZeKiLL/CodeBlazeLibrary/issues/22) from BLaZeKiLL/fix/meta-files ([59d9201](https://github.com/BLaZeKiLL/CodeBlazeLibrary/commit/59d9201fb8ef2159aac6c07db1f51514bb558c4f))
+
 # [1.3.0](https://github.com/BLaZeKiLL/CodeBlazeLibrary/compare/v1.2.1...v1.3.0) (2020-10-20)
 
 
