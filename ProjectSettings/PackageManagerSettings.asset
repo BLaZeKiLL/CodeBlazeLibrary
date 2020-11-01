@@ -29,6 +29,7 @@ MonoBehaviour:
     m_Url: https://package.openupm.com
     m_Scopes:
     - com.neuecc.unirx
+    - io.codeblaze
     m_IsDefault: 0
     m_Capabilities: 0
   m_UserSelectedRegistryName: Open Upm
@@ -41,6 +42,7 @@ MonoBehaviour:
       m_Url: https://package.openupm.com
       m_Scopes:
       - com.neuecc.unirx
+      - io.codeblaze
       m_IsDefault: 0
       m_Capabilities: 0
     m_Modified: 0
@@ -48,4 +50,5 @@ MonoBehaviour:
     m_Url: https://package.openupm.com
     m_Scopes:
     - com.neuecc.unirx
+    - io.codeblaze
     m_SelectedScopeIndex: 0

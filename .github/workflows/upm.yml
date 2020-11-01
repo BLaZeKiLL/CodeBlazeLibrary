@@ -24,12 +24,13 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Create Upm Branches
         run: |
-          git branch -d upm/game-framework upm/library upm/templates upm/extensions/cinemachine upm/extensions/Monetization &> /dev/null || echo upm branches not found
+          git branch -d upm/game-framework upm/library upm/templates upm/extensions/cinemachine upm/extensions/monetization upm/extensions/unirx &> /dev/null || echo upm branches not found
           git subtree split -P Assets/Src/Library -b upm/library
           git subtree split -P Assets/Src/Templates -b upm/templates
           git subtree split -P Assets/Src/GameFramework -b upm/game-framework
           git subtree split -P Assets/Src/Extensions/Cinemachine -b upm/extensions/cinemachine
           git subtree split -P Assets/Src/Extensions/Monetization -b upm/extensions/monetization
+          git subtree split -P Assets/Src/Extensions/UniRx -b upm/extensions/unirx
           git push origin --all
       - name: Release Tagging
         if: steps.semantic.outputs.new_release_published == 'true'
@@ -40,4 +41,5 @@ jobs:
           git tag game-framework/v${{ steps.semantic.outputs.new_release_version }} upm/game-framework
           git tag extensions/cinemachine/v${{ steps.semantic.outputs.new_release_version }} upm/extensions/cinemachine
           git tag extensions/monetization/v${{ steps.semantic.outputs.new_release_version }} upm/extensions/monetization
+          git tag extensions/unirx/v${{ steps.semantic.outputs.new_release_version }} upm/extensions/unirx
           git push origin --tags
