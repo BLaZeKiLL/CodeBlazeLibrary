@@ -31,6 +31,10 @@
       { "npmPublish": false, "pkgRoot": "./Assets/Src/Extensions/Monetization" }
     ],
     [
+      "@semantic-release/npm",
+      { "npmPublish": false, "pkgRoot": "./Assets/Src/Extensions/UniRx" }
+    ],
+    [
       "@semantic-release/git",
       {
         "assets": ["./Assets/Src/Library/package.json", "CHANGELOG.md"],
@@ -54,20 +58,21 @@
     [
       "@semantic-release/git",
       {
-        "assets": [
-          "./Assets/Src/Extensions/Cinemachine/package.json",
-          "CHANGELOG.md"
-        ],
+        "assets": ["./Assets/Src/Extensions/UniRx/package.json", "CHANGELOG.md"],
         "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
       }
     ],
     [
       "@semantic-release/git",
       {
-        "assets": [
-          "./Assets/Src/Extensions/Monetization/package.json",
-          "CHANGELOG.md"
-        ],
+        "assets": ["./Assets/Src/Extensions/Cinemachine/package.json", "CHANGELOG.md"],
+        "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+      }
+    ],
+    [
+      "@semantic-release/git",
+      {
+        "assets": ["./Assets/Src/Extensions/Monetization/package.json", "CHANGELOG.md"],
         "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
       }
     ],
