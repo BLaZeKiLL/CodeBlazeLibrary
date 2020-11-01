@@ -1,0 +1,29 @@
+﻿{
+  "name": "io.codeblaze.extensions.unirx",
+  "version": "1.3.1",
+  "displayName": "CodeBlaze Extensions Unirx",
+  "description": "Extensions for unity unirx",
+  "unity": "2020.1",
+  "unityRelease": "2f1",
+  "dependencies": {
+    "com.neuecc.unirx": "7.1.0",
+    "com.unity.textmeshpro": "3.0.3"
+  },
+  "keywords": [
+    "Utility"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BLaZeKiLL/CodeBlazeLib.git"
+  },
+  "bugs": {
+    "url": "https://github.com/BLaZeKiLL/CodeBlazeLib/issues"
+  },
+  "homepage": "https://github.com/BLaZeKiLL/CodeBlazeLib#readme",
+  "author": {
+    "name": "CodeBlaze",
+    "email": "blazeingamer10@gmail.com",
+    "url": "https://www.youtube.com/channel/UC_qfPIYfXOvg0SDAc8Z68WA"
+  }
+}

@@ -48,7 +48,8 @@
       "name": "Open Upm",
       "url": "https://package.openupm.com",
       "scopes": [
-        "com.neuecc.unirx"
+        "com.neuecc.unirx",
+        "io.codeblaze"
       ]
     }
   ]
