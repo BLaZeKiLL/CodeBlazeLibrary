@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/BLaZeKiLL/CodeBlazeLibrary/compare/v1.3.1...v1.4.0) (2020-11-01)
+
+
+### Features
+
+* Merge pull request [#23](https://github.com/BLaZeKiLL/CodeBlazeLibrary/issues/23) from BLaZeKiLL/feat/unirx-extension ([18041f9](https://github.com/BLaZeKiLL/CodeBlazeLibrary/commit/18041f9a878b0cd3c03dafefaf585147977c3873))
+
 ## [1.3.1](https://github.com/BLaZeKiLL/CodeBlazeLibrary/compare/v1.3.0...v1.3.1) (2020-10-20)
 
 
