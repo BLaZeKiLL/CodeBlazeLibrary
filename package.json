@@ -1,6 +1,6 @@
 {
   "name": "io.codeblaze.extensions.unirx",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "displayName": "CodeBlaze Extensions Unirx",
   "description": "Extensions for unity unirx",
   "unity": "2020.1",
