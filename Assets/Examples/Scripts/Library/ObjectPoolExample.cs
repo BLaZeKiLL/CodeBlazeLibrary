@@ -2,7 +2,7 @@
 
 using UnityEngine;
 
-namespace CodeBlaze.Examples.LibraryExamples {
+namespace CodeBlaze.Examples.Library {
 
     public class ObjectPoolExample : MonoBehaviour {
 
