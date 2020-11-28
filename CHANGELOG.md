@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/BLaZeKiLL/CodeBlazeLibrary/compare/v1.4.1...v1.5.0) (2020-11-28)
+
+
+### Features
+
+* Merge pull request [#27](https://github.com/BLaZeKiLL/CodeBlazeLibrary/issues/27) from dharmeshmp/main ([e9efe5a](https://github.com/BLaZeKiLL/CodeBlazeLibrary/commit/e9efe5a0ef711a5f582fbb1de34037b51987355e))
+
 ## [1.4.1](https://github.com/BLaZeKiLL/CodeBlazeLibrary/compare/v1.4.0...v1.4.1) (2020-11-01)
 
 
