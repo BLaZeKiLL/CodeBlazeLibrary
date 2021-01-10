@@ -37,6 +37,9 @@
 # CodeBlaze Packages
 CodeBlaze's Packages for Unity
 
+[NEW REPO](https://github.com/BLaZeKiLL/CBSL) - Current repo is archived as there are issuses with release config and 6 different packages dosen't make much sense
+when we could be using assembly level script defines and have just one package and that is the goal of CodeBlaze Standard Library (CBSL)
+
 ## Installation
 These packages are published to open upm and can be installed using there cli
 - [Library](https://openupm.com/packages/io.codeblaze.library/)
