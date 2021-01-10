@@ -18,5 +18,24 @@ namespace CodeBlaze.Library.Extensions
 
             return transform;
         }
+
+        /// <summary>
+        /// Destroy all children of type T
+        /// </summary>
+        /// <param name="transform"></param>
+        /// <typeparam name="T"></typeparam>
+        /// <returns></returns>
+        public static Transform Clear<T>(this Transform transform)
+        {
+            foreach (Transform child in transform)
+            {
+                if (child.GetComponent<T>() != null)
+                {
+                    Object.Destroy(child.gameObject);
+                }
+            }
+
+            return transform;
+        }
     }
 }
